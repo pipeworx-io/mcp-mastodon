@@ -1,0 +1,68 @@
+[
+  {
+    "name": "search",
+    "description": "Search Mastodon for accounts, statuses, or hashtags. Returns matching profiles, posts, and tags with follower counts and engagement metrics.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query string"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of results: accounts, statuses, or hashtags (default: statuses)"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Number of results to return (default: 10, max: 40)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_trending",
+    "description": "Get currently trending posts on Mastodon. Returns popular statuses with engagement counts, authors, and trending tags.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "Number of trending statuses to return (default: 10, max: 40)"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_account",
+    "description": "Get a Mastodon account profile by ID (e.g., '109382839472938472'). Returns bio, follower/following counts, post history, and verification status.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Numeric Mastodon account ID (e.g. \"109302436954721982\")"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "get_timeline",
+    "description": "Get recent posts from the public Mastodon timeline. Returns statuses with authors, timestamps, engagement counts, and content.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "Number of statuses to return (default: 20, max: 40)"
+        }
+      }
+    }
+  }
+]
