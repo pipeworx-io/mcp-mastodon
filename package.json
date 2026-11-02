@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-mastodon",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Mastodon MCP — public Mastodon data via mastodon.social (no auth required)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "mastodon",
     "gatewaySlug": "mastodon",
-    "sourceHash": "v1-c62c79fc905459364e470fdb4924986e0771155119a8dea4c6137072df974848",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-7c4088c4cb47cbdfd93dfc820f6a0bc75e612281e223253d16aeb2203d44b9aa",
+    "sourceCommit": "236b0a46d91f343fe094da9f499c378e88f78312"
   }
 }
